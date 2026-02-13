@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>HAPPY VALENTINE</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="hearts"></div>
+
+<!-- LOGIN -->
+<div id="login">
+<div class="side-photos left">
+    <img src="fotocantik1.jpeg">
+    <img src="fotocantik2.jpeg">
+    <img src="fotocantik3.jpeg">
+</div>
+
+<div class="side-photos right">
+    <img src="fotocantik4.jpeg">
+    <img src="fotocantik5.jpeg">
+    <img src="fotocantik6.jpeg">
+</div>
+
+    <div class="login-card">
+        <img src="fotodia.jpeg" class="login-photo">
+
+        <h2>Sebelum masuk… 💌</h2>
+        <p class="login-sub">Masukin passwordnya dulu yaa cantikk🤍</p>
+
+        <input type="password" id="passwordInput" placeholder="Password...">
+<button type="button" onclick="checkPassword()">Login</button>
+    </div>
+
+</div>
+
+<!-- STORY -->
+<div id="story" class="hidden">
+
+    <div class="scene hidden" id="scene1">
+        <p>25 October... hari ter deg degan</p>
+    </div>
+
+    <div class="scene hidden" id="scene2">
+        <p>Dengan suara agak gemeter...</p>
+        <p><b>"Kita Pacaran aja gimana"</b></p>
+    </div>
+
+    <div class="scene hidden" id="scene3">
+        <p>Dan sejak hari itu, semuanya berubah ❤️</p>
+        <img src="firstdate.jpeg" class="memory-img">
+    </div>
+
+    <!-- GALLERY -->
+    <div class="scene hidden" id="gallery">
+        <h1 id="typing"></h1>
+        <h2 class="valentine-text">Do you accept me as your Valentine? 💌</h2>
+
+<div class="valentine-btn">
+    <button class="yes-btn" onclick="alert('YAYYY ❤️')">Yes</button>
+    <button class="no-btn" onmouseover="moveNo()">No</button>
+    <script>
+function moveNo(){
+    let btn = document.querySelector(".no-btn");
+    btn.style.position = "absolute";
+    btn.style.top = Math.random()*300 + "px";
+    btn.style.left = Math.random()*300 + "px";
+}
+</script>
+
+</div>
+
+        <h2>Kenangan Kita 📸</h2>
+
+        <div class="photos">
+            <img src="foto1.jpeg">
+            <img src="foto2.jpeg">
+            <img src="foto3.jpeg">
+            <img src="foto10.jpeg">
+            <img src="foto4.jpeg">
+            <img src="foto6.jpeg">
+            <img src="foto7.jpeg">
+            <img src="foto8.jpeg">
+            <img src="foto9.jpeg">
+            <img src="foto5.jpeg">
+        </div>
+
+        <!-- SURAT (hidden dulu) -->
+        <div class="letter-section hidden" id="letterSection">
+            <div class="envelope" onclick="openLetter()">
+                💌
+                <p>Klik buat buka suratnya...</p>
+            </div>
+
+            <div class="letter hidden" id="loveLetter">
+    <h3>For Devira🤍</h3>
+
+    <p>
+    HAYYY DEVIRAA.
+    Jujur ya, aku nggak pernah nyangka hal sesederhana kenal kamu
+    bisa jadi salah satu hal paling berharga di hidup aku.
+    </p>
+
+    <p>
+    Dari obrolan random yang nggak jelas,
+    dari chat chatan yang nggak penting,
+    sampai momen-momen kecil yang mungkin orang lain nggak sadar…
+    semuanya berarti banget buat aku.
+    </p>
+
+    <p>
+    aku suka cara kamu cerita.
+    aku suka cara kamu marah sama aku, tapi kamu tetap peduli sama aku.
+    aku suka cara kamu bikin hal biasa jadi terasa spesial.
+     yang paling aku suka…
+    aku bisa jadi diri aku sendiri waktu sama kamu.
+    </p>
+
+    <p>
+    Mungkin aku nggak selalu bilang,
+    mungkin aku nggak selalu nunjukin dengan cara yang sempurna,
+    tapi setiap hari aku tuh selalu bersyukur
+    karena Tuhan ngasih aku kesempatan buat kenal kamu,
+    jalan bareng kamu,
+    dan tumbuh bareng kamu.
+    </p>
+
+    <p>
+    Kalau suatu hari nanti kita lagi capek,
+    lagi beda pendapat,
+    atau lagi ngerasa dunia berat,
+    aku cuma mau kamu inget satu hal:
+    aku tetap milih kamu.
+    </p>
+
+    <p>
+    Bukan karena semuanya selalu mudah.
+    Tapi karena sama kamu, semuanya tuh kerasa layak diperjuangin.
+    </p>
+
+    <p>
+    Makasih ya sayangkuu cintakuu 
+    Udah jadi rumah buat aku.
+    Udah jadi alasan senyum buat aku.
+    Udah jadi bagian paling hangat di hidup aku.
+    </p>
+
+    <p>
+        I LOVE U 3000
+        I LOVE U SO MUCH
+        I LOVE U MORE THAN ANYTHING
+        AKU SAYANG BANGET BANGET BANGET BANGET SAMA KAMU 
+        ICH LIEBE DICH
+        a lot.
+    </p>
+
+    <p>
+    Happy Valentine my honey bunny sweetie🤍  
+    – Dari henda, yang selalu milih kamu.
+    </p>
+</div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="watermark">
+    dibuat henda untuk devira ❤️ 
+</div>
+<script src="script.js"></script>
+</body>
+</html>
